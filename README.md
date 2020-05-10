@@ -22,6 +22,8 @@ By default, headings and paragraphs have a `margin-top` and `margin-bottom` equa
   - `a:active`
 Always include a hover and focus state.
 
+### Practice time:
+- Always put styling regarding to paragraphs in the body to prevent from repeating css.
 
 ## 2. Starting to think responsively
 ## 3. Stepping up our style
