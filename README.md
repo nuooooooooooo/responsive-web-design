@@ -12,6 +12,7 @@ By default, headings and paragraphs have a `margin-top` and `margin-bottom` equa
 ### 1.b Inline
 
 **Inline** elements only accept margins and paddings on the left and right, to be precise, it does accept paddings on the top and bottom but it won't change the position of the element and will only overlap any surrounding items.
+**Inline blocks** works like an inline element, but margins and paddings can be set on it. Good for styling buttons.
  
 #### 1.b.1 Styling links.
 - Refresher : Styling links is made possible by working on the following pseudo-classes:
@@ -22,8 +23,29 @@ By default, headings and paragraphs have a `margin-top` and `margin-bottom` equa
   - `a:active`
 Always include a hover and focus state.
 
+### 1.c Buttons
+In general, Kevin uses a ratio of 1:2.5.
+
 ### Practice time:
 - Always put styling regarding to paragraphs in the body to prevent from repeating css.
+
+### 1.d Specificity
+From lowest specificity to highest, we have :
+- Element selectors,
+- Class selectors,
+- ID selectors.
+
+*How to know when to use what*
+General rules are put in **element selectors** (body, headings, paragraphs, etc.)
+Everything else is put in **class selectors**.
+
+### 1.f Compound selectors
+
+They look like this:
+```css
+.section-one .btn { ... }
+.section-two .btn { ... }
+```
 
 ## 2. Starting to think responsively
 ## 3. Stepping up our style
