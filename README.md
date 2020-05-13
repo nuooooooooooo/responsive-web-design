@@ -39,6 +39,10 @@ From lowest specificity to highest, we have :
 General rules are put in **element selectors** (body, headings, paragraphs, etc.)
 Everything else is put in **class selectors**.
 
+*A better way to name CSS classes*
+Create a generic class then give more specific classes if needed.
+Ex: for a two buttons, first set a class of .btn, then set a more specific class such as .btn-secondary or .btn-accent on the button that needs to be slightly different in style.
+
 ### 1.f Compound selectors
 
 They look like this:
@@ -46,6 +50,11 @@ They look like this:
 .section-one .btn { ... }
 .section-two .btn { ... }
 ```
+
+### 1.g Inheritance
+
+For elements that already have some styling (such as links with color and text-decoration), it is possible to give them the color and style of the text around them if we use `inherit` on the property.
+
 
 ## 2. Starting to think responsively
 ## 3. Stepping up our style
