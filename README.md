@@ -31,9 +31,9 @@ In general, Kevin uses a ratio of 1:2.5.
 
 ### 1.d Specificity
 From lowest specificity to highest, we have :
-- Element selectors,
-- Class selectors,
-- ID selectors.
+- Element selectors (could be equaled to 1pt),
+- Class selectors(could be equaled to 10pt),
+- ID selectors (could be equaled to 110pts).
 
 *How to know when to use what*
 General rules are put in **element selectors** (body, headings, paragraphs, etc.)
