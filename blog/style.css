@@ -1,0 +1,112 @@
+/* Fonts
+font-family : "Lora", serif;
+font-family : "Ubuntu", sans-serif;
+*/
+
+/* General settings */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-gray: hsl(0, 0%, 97%);
+  --gray: hsl(0, 0%, 44%);
+  --cyan: hsl(201, 80%, 46%);
+  --blue: hsl(218, 71%, 27%);
+}
+
+/* ==================
+Typography 
+====================*/
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.menu-title {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--blue);
+}
+
+.menu-subtitle,
+.menu-list {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.menu-subtitle {
+  font-size: 0.75rem;
+  color: var(--cyan);
+}
+
+.menu-list {
+  font-size: 1rem;
+  color: var(--blue);
+  list-style: none;
+}
+
+.menu-list a {
+  color: inherit;
+  text-decoration: none;
+  /* best to always add this so website is more accessible on mobile */
+  padding: 0.25em 0;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  color: var(--cyan);
+}
+
+/*=================
+ Layout 
+ ==================*/
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navigation */
+
+.menu {
+  background-color: var(--white-gray);
+  padding: 2em 0;
+  min-height: 100px;
+  width: 100%;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item + .menu-item {
+  margin-left: 2em;
+}
+
+.current-page {
+  border-bottom: 1px solid var(--blue);
+}
+
+.menu-list .current-page:hover {
+  color: var(--blue);
+}
