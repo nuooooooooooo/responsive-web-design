@@ -57,7 +57,22 @@ For elements that already have some styling (such as links with color and text-d
 
 
 ## 2. Starting to think responsively
+
+//
 ## 3. Stepping up our style
+
+- Line height's default is 1.4, in general it is best to set it somewhere between 1.6/1.7, but it can be set to a smaller size for larger font sizes.
+- A nice trick to have text match a background color is to set it to white or black in rgba and add an alpha of about 0.6 to 0.75 and the text will match with the background no matter how.
+
+### 3.a Background images
+If text has to overlay an image, it is best to set it as a bg img.  
+``background-size: contain`` makes sure we can see the entire image.  
+``background-size: container`` makes sure the image fills the entire space of a div  
+``background-positon: top left / top right / bottom right / center`` positions the image at a certain place in the div.  
+
+
 ## 4. CSS Flexbox
+### 4.a Flex default value
+By defaultm flex is set to stretch, which means the background stretches to the size of the container.
 ## 5. CSS Grid
 ## 6. Final project
